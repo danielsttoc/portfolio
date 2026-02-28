@@ -90,6 +90,15 @@ h1 {
   margin-bottom: 18px;
 }
 
+/* Hero divider line */
+.hero-line {
+  width: 120px;
+  height: 2px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, transparent, #2ee59d, transparent);
+  border-radius: 2px;
+}
+
 .intro {
   max-width: 650px;
   margin: 0 auto 28px;
