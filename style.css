@@ -71,11 +71,18 @@ nav {
 header {
   text-align: center;
   padding: 200px 0 160px 0;
+  animation: glowShift 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowShift {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.05); }
 }
 
 h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  text-shadow: 0 0 12px rgba(46, 229, 157, 0.25);
 }
 
 .subtitle {
@@ -155,7 +162,9 @@ h2 {
 .card:hover {
   transform: translateY(-6px);
   border-color: #2ee59d;
-  box-shadow: 0 8px 25px rgba(46, 229, 157, 0.15);
+  box-shadow: 
+    0 8px 25px rgba(46, 229, 157, 0.15),
+    0 0 20px rgba(46, 229, 157, 0.08);
 }
 
 .card h3 {
@@ -233,4 +242,16 @@ footer {
   font-size: 14px;
   background-color: #050a08;
   color: #6e8f82;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(46,229,157,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46,229,157,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
 }
