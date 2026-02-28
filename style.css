@@ -193,30 +193,32 @@ h2 {
   padding: 6px 10px;
   border-radius: 999px;
 }
-
 /* TECH ICONS */
 .tech-icons {
   margin-top: auto;
   padding-top: 18px;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .tech-icons img {
-  height: 32px;
+  height: 28px;
   width: auto;
+  max-width: 90px;
   object-fit: contain;
-  opacity: 0.92;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #263241;
+  border-radius: 8px;
   transition: 0.25s ease;
-  filter: grayscale(15%);
 }
 
 .tech-icons img:hover {
-  transform: scale(1.10);
-  opacity: 1;
-  filter: grayscale(0%);
+  transform: translateY(-3px);
+  border-color: #4da3ff;
+  background: rgba(77, 163, 255, 0.05);
 }
 
 /* CONTACT LINKS */
