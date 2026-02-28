@@ -241,3 +241,12 @@ footer {
   background-color: #0b0f14;
   color: #6e7681;
 }
+
+/* FORCE LOGO SIZE FIX */
+.tech-icons img {
+  max-height: 30px !important;
+  max-width: 80px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
