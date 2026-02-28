@@ -12,10 +12,10 @@ html {
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: radial-gradient(circle at top,
-    #0f4d36 0%,
-    #08241a 40%,
-    #040907 100%
-);
+    #133c2c 0%,
+    #0b241a 45%,
+    #050a08 100%
+  );
   color: #e6edf3;
   line-height: 1.6;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  border-top: 1px solid #1f2933;
+  border-top: 1px solid #1a2a22;
 }
 
 /* NAV */
@@ -36,9 +36,9 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(10, 17, 24, 0.85);
+  background: rgba(6, 15, 12, 0.85);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #1f2933;
+  border-bottom: 1px solid #1a2a22;
   z-index: 1000;
 }
 
@@ -59,12 +59,12 @@ nav {
 .nav-links a {
   margin-left: 25px;
   text-decoration: none;
-  color: #9da5b4;
+  color: #9fbdb2;
   transition: 0.25s ease;
 }
 
 .nav-links a:hover {
-  color: #4da3ff;
+  color: #2ee59d;
 }
 
 /* HERO */
@@ -79,14 +79,14 @@ h1 {
 }
 
 .subtitle {
-  color: #4da3ff;
+  color: #2ee59d;
   margin-bottom: 18px;
 }
 
 .intro {
   max-width: 650px;
   margin: 0 auto 28px;
-  color: #9da5b4;
+  color: #9fbdb2;
 }
 
 /* BUTTONS */
@@ -106,29 +106,29 @@ h1 {
 }
 
 .btn {
-  background-color: #4da3ff;
-  color: #0f1419;
+  background-color: #2ee59d;
+  color: #04110c;
 }
 
 .btn:hover {
-  background-color: #2f8cff;
+  background-color: #1ec97f;
 }
 
 .btn-outline {
-  border: 1px solid #4da3ff;
-  color: #4da3ff;
+  border: 1px solid #2ee59d;
+  color: #2ee59d;
 }
 
 .btn-outline:hover {
-  background-color: #4da3ff;
-  color: #0f1419;
+  background-color: #2ee59d;
+  color: #04110c;
 }
 
 /* HEADINGS */
 h2 {
   font-size: 28px;
   margin-bottom: 30px;
-  border-left: 4px solid #4da3ff;
+  border-left: 4px solid #2ee59d;
   padding-left: 12px;
 }
 
@@ -142,10 +142,10 @@ h2 {
 
 /* CARDS */
 .card {
-  background-color: #121821;
+  background-color: #0d1b16;
   padding: 25px;
   border-radius: 10px;
-  border: 1px solid #1f2933;
+  border: 1px solid #1a2a22;
   transition: 0.25s ease;
   display: flex;
   flex-direction: column;
@@ -154,8 +154,8 @@ h2 {
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: #4da3ff;
-  box-shadow: 0 8px 25px rgba(77, 163, 255, 0.15);
+  border-color: #2ee59d;
+  box-shadow: 0 8px 25px rgba(46, 229, 157, 0.15);
 }
 
 .card h3 {
@@ -165,7 +165,7 @@ h2 {
 
 .card p {
   font-size: 14px;
-  color: #9da5b4;
+  color: #9fbdb2;
 }
 
 /* PILLS */
@@ -178,9 +178,9 @@ h2 {
 
 .pill {
   font-size: 12px;
-  color: #c7d2e0;
-  border: 1px solid #263241;
-  background: rgba(255, 255, 255, 0.03);
+  color: #b9e8d7;
+  border: 1px solid #1f3b30;
+  background: rgba(46, 229, 157, 0.05);
   padding: 6px 10px;
   border-radius: 999px;
 }
@@ -203,8 +203,8 @@ h2 {
   object-fit: contain;
 
   padding: 6px 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid #263241;
+  background: rgba(46, 229, 157, 0.05);
+  border: 1px solid #1f3b30;
   border-radius: 8px;
 
   transition: 0.2s ease;
@@ -212,18 +212,18 @@ h2 {
 
 .tech-icons img:hover {
   transform: translateY(-2px);
-  border-color: #4da3ff;
+  border-color: #2ee59d;
 }
 
 /* CONTACT */
 #contact a {
-  color: #9da5b4;
+  color: #9fbdb2;
   text-decoration: none;
   transition: 0.25s ease;
 }
 
 #contact a:hover {
-  color: #4da3ff;
+  color: #2ee59d;
 }
 
 /* FOOTER */
@@ -231,6 +231,6 @@ footer {
   text-align: center;
   padding: 30px;
   font-size: 14px;
-  background-color: #0b0f14;
-  color: #6e7681;
+  background-color: #050a08;
+  color: #6e8f82;
 }
