@@ -12,10 +12,10 @@ html {
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: radial-gradient(circle at top,
-    #0e1f18 0%,
-    #08130f 50%,
+    #10251d 0%,
+    #0b1a14 45%,
     #050a08 100%
-  );
+);
   color: #e6edf3;
   line-height: 1.6;
 }
