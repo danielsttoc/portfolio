@@ -1,106 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Daniel Scott | Cyber Security Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Daniel Scott | Cyber Security Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
+  <nav>
     <div class="nav-container">
-        <div class="logo">Daniel Scott</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
+      <div class="logo">Daniel Scott</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#lab">Lab</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<header>
-    <div class="container">
-        <h1>Daniel Scott</h1>
-        <p class="subtitle">
-            BSc Computing Student | Networks | Cyber Security | Digital Forensics
-        </p>
-        <p class="intro">
-            I design, deploy and analyse secure systems — from structured home lab environments 
-            to digital forensic investigations.
-        </p>
+  <header>
+    <div class="container hero">
+      <h1>Daniel Scott</h1>
+      <p class="subtitle">BSc Computing Student | Networks | Cyber Security | Digital Forensics</p>
+      <p class="intro">
+        I design, deploy and analyse secure systems — from structured home lab environments
+        to digital forensic investigations.
+      </p>
 
-        <div class="buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn-outline">Contact</a>
-        </div>
+      <div class="buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="DanielScottCV.pdf" class="btn-outline" download>Download CV</a>
+        <a href="https://github.com/danielsttoc" class="btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/danielsttoc/" class="btn-outline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
     </div>
-</header>
+  </header>
 
-<section id="about">
+  <section id="about">
     <div class="container">
-        <h2>About Me</h2>
+      <h2>About Me</h2>
+      <p>
+        I’m a Computing student specialising in Networks, Cyber Security and Digital Forensics.
+        I enjoy hands-on work — building lab environments, analysing security logs, and producing
+        clear technical write-ups.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <!-- Honeypot -->
+      <div class="card">
+        <h3>Honeypot Deployment & Log Analysis</h3>
         <p>
-            I am a second-year Computing student at Edge Hill University specialising 
-            in Networks, Cyber Security and Digital Forensics.
+          Deployed a T-Pot honeypot environment to observe real-world attack traffic and analysed
+          events using the Elastic stack.
         </p>
+
+        <div class="pill-row">
+          <span class="pill">T-Pot</span>
+          <span class="pill">Elastic</span>
+        </div>
+
+        <div class="tech-icons">
+          <img src="assets/ubuntu.png" alt="Ubuntu">
+          <img src="assets/docker.png" alt="Docker">
+        </div>
+      </div>
+
+      <!-- Network -->
+      <div class="card">
+        <h3>Wireless Network & VLAN Design</h3>
         <p>
-            My focus is on understanding how systems function, how they fail, and how they 
-            can be secured through structured design and security-first thinking.
+          Designed and simulated a VLAN-segmented network architecture using Cisco Packet Tracer,
+          applying secure routing and segmentation principles.
         </p>
-    </div>
-</section>
 
-<section id="projects">
+        <div class="pill-row">
+          <span class="pill">Cisco Packet Tracer</span>
+          <span class="pill">VLAN</span>
+        </div>
+
+        <div class="tech-icons">
+          <img src="assets/cisco.png" alt="Cisco">
+        </div>
+      </div>
+
+      <!-- Forensics -->
+      <div class="card">
+        <h3>Digital Forensic Investigation</h3>
+        <p>
+          Conducted disk image analysis using Autopsy including artefact extraction, MD5 verification,
+          and timeline reconstruction.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Autopsy</span>
+          <span class="pill">MD5</span>
+        </div>
+
+        <div class="tech-icons">
+          <img src="assets/autopsy.png" alt="Autopsy">
+          <img src="assets/ubuntu.png" alt="Ubuntu">
+        </div>
+      </div>
+
+      <!-- Raspberry Pi -->
+      <div class="card">
+        <h3>Raspberry Pi Facial Recognition</h3>
+        <p>
+          Built a Python-based recognition system using Raspberry Pi and a camera module to match
+          faces against a dataset, logging results for review.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">Raspberry Pi</span>
+        </div>
+
+        <div class="tech-icons">
+          <img src="assets/raspberrypi.png" alt="Raspberry Pi">
+          <img src="assets/ubuntu.png" alt="Ubuntu">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="lab">
     <div class="container">
-        <h2>Projects</h2>
+      <h2>Lab</h2>
+      <div class="card single">
+        <p>
+          I maintain a home lab for testing deployments, log pipelines, segmentation and troubleshooting.
+          I use it to validate designs, collect evidence, and document outcomes clearly.
+        </p>
 
-        <div class="card">
-            <h3>Honeypot Deployment & Log Analysis</h3>
-            <p>
-                Deployed a T-Pot honeypot environment using Docker and the ELK stack 
-                to monitor real-world attack activity and analyse log pipelines.
-            </p>
+        <div class="pill-row">
+          <span class="pill">Linux</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Networking</span>
         </div>
-
-        <div class="card">
-            <h3>Wireless Network Design</h3>
-            <p>
-                Designed a VLAN-segmented network using RFC1918 private addressing 
-                and Wi-Fi 6 optimisation principles.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Digital Forensic Investigation</h3>
-            <p>
-                Performed disk image analysis including PST extraction, MD5 hash 
-                verification and timeline reconstruction.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Raspberry Pi Facial Recognition</h3>
-            <p>
-                Built a Python-based facial recognition system using Raspberry Pi 5, 
-                a camera module and database matching.
-            </p>
-        </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact">
+  <section id="approach">
     <div class="container">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    </div>
-</section>
+      <h2>Approach</h2>
 
-<footer>
+      <div class="card">
+        <h3>Structured Analysis</h3>
+        <p>Identify dependencies and constraints first, then implement and validate.</p>
+      </div>
+
+      <div class="card">
+        <h3>Security-First Design</h3>
+        <p>Segmentation, least privilege, and clear threat/risk thinking.</p>
+      </div>
+
+      <div class="card">
+        <h3>Clear Documentation</h3>
+        <p>Keep evidence, decisions, and outcomes easy to follow and repeat.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: Danielsttoc@gmail.com</p>
+      <p>
+        <a href="https://github.com/danielsttoc" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://www.linkedin.com/in/danielsttoc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
     <p>© 2026 Daniel Scott</p>
-</footer>
+  </footer>
 
 </body>
 </html>
