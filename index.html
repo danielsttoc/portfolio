@@ -3,397 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daniel Scott cyber security portfolio covering AppSec, SIEM, Docker security, Linux infrastructure, networking and digital forensics." />
+  <meta name="description" content="Daniel Scott - Cyber Security portfolio focused on homelab projects, application security training, SIEM workflows and hands-on infrastructure learning." />
   <title>Daniel Scott | Cyber Security Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav class="site-nav" aria-label="Primary navigation">
-    <div class="nav-container">
-      <a class="logo" href="#top" aria-label="Daniel Scott home">
-        <span class="logo-mark">DS</span>
-        <span>Daniel Scott</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">
-        <span></span>
-        <span></span>
-        <span></span>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="Daniel Scott home">Daniel Scott</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
-
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#training">Training</a>
-        <a href="#lab">Homelab</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <header id="top" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Cyber Security • AppSec • SIEM • Linux</p>
-        <h1>Daniel Scott</h1>
-        <p class="subtitle">
-          Cyber Security student building hands-on skills in AppSec, SIEM, Docker security and Linux infrastructure.
-        </p>
-        <p class="intro">
-          I am a BSc Computing student specialising in Networks, Cyber Security and Forensics at Edge Hill University.
-          I learn through practical labs and projects, including a Proxmox homelab, Splunk log analysis, Docker security labs
-          and SecureFlag application security training.
-        </p>
-
-        <div class="buttons" aria-label="Portfolio actions">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="DanielScottCV.pdf" class="btn-outline" download>Download CV</a>
-          <a href="https://github.com/danielsttoc" class="btn-outline" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/danielsttoc/" class="btn-outline" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <div class="focus-panel">
-          <p>Currently focused on</p>
-          <div class="pill-row">
-            <span class="pill">Splunk SIEM</span>
-            <span class="pill">Docker Security</span>
-            <span class="pill">OWASP Top 10</span>
-            <span class="pill">Linux</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-card" aria-label="Portfolio summary">
-        <div class="terminal-bar">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="terminal-content">
-          <p><span class="prompt">$</span> whoami</p>
-          <p>second-year cyber security student</p>
-          <p><span class="prompt">$</span> current_stack</p>
-          <p>Proxmox • Docker • MikroTik • Splunk • SecureFlag</p>
-          <p><span class="prompt">$</span> goal</p>
-          <p>junior security engineer / SOC / AppSec internship</p>
-        </div>
-      </div>
-    </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#homelab">Homelab</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="main">
-    <section id="about">
-      <div class="container split-section">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2>Practical cyber learning backed by real projects</h2>
+  <main id="main-content">
+    <section class="hero section container" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Liverpool / Ormskirk, United Kingdom</p>
+        <h1 id="hero-title">Cyber Security Student building hands-on skills in AppSec, SIEM, Docker Security and Linux infrastructure</h1>
+        <p class="hero-text">I am Daniel Scott, studying BSc (Hons) Computing – Networks, Cyber Security and Forensics at Edge Hill University (2024–2027). I build and secure a Proxmox homelab, practice Splunk monitoring with MikroTik logs, and complete SecureFlag labs covering OWASP, AppSec and secure Docker workflows.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="DanielScottCV.pdf" download>Download CV</a>
+          <a class="btn btn-ghost" href="https://github.com/danielsttoc" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/danielsttoc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-        <div class="section-text">
-          <p>
-            I am based in Liverpool and Ormskirk, currently studying BSc (Hons) Computing – Networks,
-            Cyber Security and Forensics at Edge Hill University. I am especially interested in application
-            security, SOC work, secure DevOps, networking, Linux and digital forensics.
-          </p>
-          <p>
-            I learn best by building and testing things myself. My current work includes maintaining a homelab,
-            analysing logs in Splunk, working through SecureFlag labs and improving my understanding of how
-            vulnerabilities are found, exploited and remediated.
-          </p>
+        <div class="focus-block" aria-label="Current focus">
+          <p>Currently focused on:</p>
+          <ul>
+            <li>Splunk SIEM</li>
+            <li>Docker Security</li>
+            <li>OWASP Top 10</li>
+            <li>Linux</li>
+          </ul>
         </div>
+      </div>
+      <aside class="terminal-card" aria-label="Terminal summary card">
+        <div class="terminal-head">
+          <span></span><span></span><span></span>
+          <p>summary.sh</p>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="output">second-year cyber security student</p>
+          <p><span class="prompt">$</span> current_stack</p>
+          <p class="output">Proxmox, Docker, MikroTik, Splunk, SecureFlag</p>
+          <p><span class="prompt">$</span> goal</p>
+          <p class="output">junior security engineer / SOC / AppSec internship</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I am currently studying Computing – Networks, Cyber Security and Forensics at Edge Hill University. I enjoy practical technical work where I can test, break, and improve systems in a controlled way. My strongest learning comes from building real projects, completing security labs, investigating logs, and troubleshooting issues until I understand both the problem and the fix.</p>
+      <p>I am actively preparing for junior opportunities in security engineering, SOC operations, application security and wider technology internships where I can contribute while continuing to grow.</p>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="grid cards-5">
+        <article class="card"><h3>Security</h3><p>OWASP Top 10, vulnerability analysis, SecureFlag labs, log analysis, basic SIEM workflows.</p></article>
+        <article class="card"><h3>Infrastructure</h3><p>Proxmox, Docker, Linux, Docker Compose, Portainer, self-hosted services.</p></article>
+        <article class="card"><h3>Networking</h3><p>MikroTik, DNS, Pi-hole, Tailscale, Cloudflare Tunnel, routing and firewall concepts.</p></article>
+        <article class="card"><h3>Programming</h3><p>Python, Java, Java Swing, HTML, CSS, SQL basics.</p></article>
+        <article class="card"><h3>Tools</h3><p>Splunk, GitHub, Autopsy, Cisco Packet Tracer, Uptime Kuma, Raspberry Pi.</p></article>
       </div>
     </section>
 
-    <section id="skills">
-      <div class="container">
-        <p class="section-kicker">Skills</p>
-        <h2>Technical areas I am developing</h2>
-
-        <div class="skills-grid">
-          <article class="card compact">
-            <h3>Security</h3>
-            <p>OWASP Top 10, vulnerability analysis, SecureFlag labs, log analysis, basic SIEM workflows</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Infrastructure</h3>
-            <p>Proxmox, Docker, Linux, Docker Compose, Portainer, self-hosted services</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Networking</h3>
-            <p>MikroTik, DNS, Pi-hole, Tailscale, Cloudflare Tunnel, routing and firewall concepts</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Programming</h3>
-            <p>Python, Java, Java Swing, HTML, CSS, SQL basics and object-oriented programming</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Tools</h3>
-            <p>Splunk, GitHub, Autopsy, Cisco Packet Tracer, Uptime Kuma, Raspberry Pi</p>
-          </article>
-        </div>
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="grid cards-2">
+        <article class="card project-card">
+          <h3>Proxmox Homelab &amp; Security Monitoring</h3>
+          <p>Built a Proxmox-based home environment running Linux services, Docker workloads and segmented networking to practice secure infrastructure operations.</p>
+          <p><strong>What I learned / achieved:</strong> Improved practical troubleshooting, secure configuration habits, service hardening and operational reliability.</p>
+          <p class="tags">Proxmox · Linux · Docker · Networking</p>
+        </article>
+        <article class="card project-card">
+          <h3>Splunk SIEM Dashboard with MikroTik Logs</h3>
+          <p>Created Splunk dashboards ingesting MikroTik syslog data to explore visibility, filtering and security-relevant event review.</p>
+          <p><strong>What I learned / achieved:</strong> Built confidence with log pipelines, search queries and basic SIEM-style monitoring workflows.</p>
+          <p class="tags">Splunk · MikroTik · Syslog · SIEM</p>
+        </article>
+        <article class="card project-card">
+          <h3>SecureFlag Application Security Labs</h3>
+          <p>Completed guided AppSec labs across OWASP-related weaknesses and secure development topics.</p>
+          <p><strong>What I learned / achieved:</strong> Practiced identifying and explaining vulnerabilities such as SQLi, XSS and broken access control patterns.</p>
+          <p class="tags">SecureFlag · OWASP Top 10 · AppSec</p>
+        </article>
+        <article class="card project-card">
+          <h3>Secure DevOps with Docker Labs</h3>
+          <p>Worked through container security labs covering insecure daemon exposure, privilege escalation and risky container settings.</p>
+          <p><strong>What I learned / achieved:</strong> Strengthened Docker security awareness and safer configuration practices for development environments.</p>
+          <p class="tags">Docker · Secure DevOps · Linux</p>
+        </article>
+        <article class="card project-card">
+          <h3>Raspberry Pi Facial Recognition Project</h3>
+          <p>Built a hackathon prototype using Raspberry Pi, Ubuntu, Python and camera input for a facial recognition workflow.</p>
+          <p><strong>What I learned / achieved:</strong> Gained practical experience integrating hardware, OS setup and Python-based logic.</p>
+          <p class="tags">Raspberry Pi · Python · Ubuntu</p>
+        </article>
+        <article class="card project-card">
+          <h3>Java Product Management Application</h3>
+          <p>Developed a Java Swing desktop application using object-oriented design for product management tasks.</p>
+          <p><strong>What I learned / achieved:</strong> Applied OOP principles, UI structure planning and iterative debugging in Java.</p>
+          <p class="tags">Java · Java Swing · OOP</p>
+        </article>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="container">
-        <p class="section-kicker">Projects</p>
-        <h2>Selected hands-on work</h2>
-
-        <div class="project-grid">
-          <article class="card project-card featured">
-            <div class="card-top">
-              <h3>Proxmox Homelab & Security Monitoring</h3>
-              <span class="tag">Infrastructure</span>
-            </div>
-            <p>
-              Built and maintain a Proxmox-based homelab for learning Linux administration, Docker services,
-              network troubleshooting, monitoring and secure remote access.
-            </p>
-            <div class="achievement">
-              <strong>Achieved:</strong> Improved my understanding of real infrastructure, service deployment and log visibility.
-            </div>
-            <div class="pill-row">
-              <span class="pill">Proxmox</span>
-              <span class="pill">Linux</span>
-              <span class="pill">Docker</span>
-              <span class="pill">Tailscale</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <h3>Splunk SIEM Dashboard with MikroTik Logs</h3>
-              <span class="tag">SIEM</span>
-            </div>
-            <p>
-              Configured MikroTik syslog forwarding into Splunk and built a dashboard to review router events,
-              network activity and security-relevant logs.
-            </p>
-            <div class="achievement">
-              <strong>Learned:</strong> Log ingestion, searching, dashboard creation and basic security monitoring workflows.
-            </div>
-            <div class="pill-row">
-              <span class="pill">Splunk</span>
-              <span class="pill">MikroTik</span>
-              <span class="pill">Syslog</span>
-              <span class="pill">Dashboards</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <h3>SecureFlag Application Security Labs</h3>
-              <span class="tag">AppSec</span>
-            </div>
-            <p>
-              Completed practical labs covering common application security risks including SQL injection,
-              XSS, broken authorization, broken authentication and insecure deserialization.
-            </p>
-            <div class="achievement">
-              <strong>Practised:</strong> Identifying vulnerable patterns, understanding impact and applying safer fixes.
-            </div>
-            <div class="pill-row">
-              <span class="pill">OWASP Top 10</span>
-              <span class="pill">SQLi</span>
-              <span class="pill">XSS</span>
-              <span class="pill">Code Review</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <h3>Secure DevOps with Docker Labs</h3>
-              <span class="tag">Docker Security</span>
-            </div>
-            <p>
-              Worked through Docker security exercises involving exposed daemon ports, privileged containers,
-              Docker group risks, SSRF and secrets handling.
-            </p>
-            <div class="achievement">
-              <strong>Learned:</strong> Why least privilege, safe daemon exposure and secure secret handling matter in containers.
-            </div>
-            <div class="pill-row">
-              <span class="pill">Docker</span>
-              <span class="pill">Containers</span>
-              <span class="pill">SSRF</span>
-              <span class="pill">Secrets</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <h3>Raspberry Pi Facial Recognition</h3>
-              <span class="tag">Hackathon</span>
-            </div>
-            <p>
-              Worked in a team to build a Python-based recognition system using Raspberry Pi hardware,
-              Ubuntu and a camera module during a university hackathon.
-            </p>
-            <div class="achievement">
-              <strong>Built:</strong> A system that compared captured images against a database and logged recognised matches.
-            </div>
-            <div class="pill-row">
-              <span class="pill">Python</span>
-              <span class="pill">Raspberry Pi</span>
-              <span class="pill">Ubuntu</span>
-              <span class="pill">Teamwork</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="card-top">
-              <h3>Java Product Management Application</h3>
-              <span class="tag">Software</span>
-            </div>
-            <p>
-              Developed a Java Swing application for managing products, recording sales and generating reports
-              using object-oriented programming.
-            </p>
-            <div class="achievement">
-              <strong>Improved:</strong> Java, GUI development, class design and basic software structure.
-            </div>
-            <div class="pill-row">
-              <span class="pill">Java</span>
-              <span class="pill">Java Swing</span>
-              <span class="pill">OOP</span>
-              <span class="pill">Reports</span>
-            </div>
-          </article>
-        </div>
+    <section class="section container" id="training" aria-labelledby="training-title">
+      <h2 id="training-title">Certifications &amp; Practical Training</h2>
+      <p>This section represents practical training and hands-on learning paths completed through SecureFlag, rather than formal professional certifications.</p>
+      <div class="card">
+        <h3>SecureFlag learning paths</h3>
+        <ul class="bullet-list">
+          <li>Web Security with OWASP Top 10</li>
+          <li>Introductory Secure DevOps with Docker</li>
+          <li>Application Security Fundamentals</li>
+          <li>Injections With Pseudocode</li>
+          <li>Secure Vibe Coding</li>
+          <li>Securing Your Organization</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Topics practised in labs</h3>
+        <p>SQL injection, cross-site scripting (XSS), broken authorization, broken authentication, security misconfiguration, insecure deserialization, insufficient logging, Docker privilege escalation, exposed Docker daemon ports, privileged containers, SSRF, sensitive information disclosure and secrets handling.</p>
       </div>
     </section>
 
-    <section id="training">
-      <div class="container">
-        <p class="section-kicker">Certifications & Practical Training</p>
-        <h2>SecureFlag learning paths and practical labs</h2>
-
-        <div class="training-layout">
-          <div class="card training-card">
-            <h3>Completed SecureFlag learning paths</h3>
-            <ul class="clean-list">
-              <li>Web Security with OWASP Top 10</li>
-              <li>Introductory Secure DevOps with Docker</li>
-              <li>Application Security Fundamentals</li>
-              <li>Injections With Pseudocode</li>
-              <li>Secure Vibe Coding</li>
-              <li>Securing Your Organization</li>
-            </ul>
-          </div>
-
-          <div class="card training-card">
-            <h3>Topics practised</h3>
-            <div class="pill-row">
-              <span class="pill">SQL Injection</span>
-              <span class="pill">XSS</span>
-              <span class="pill">Broken Authorization</span>
-              <span class="pill">Broken Authentication</span>
-              <span class="pill">Security Misconfiguration</span>
-              <span class="pill">Insecure Deserialization</span>
-              <span class="pill">SSRF</span>
-              <span class="pill">Docker Privilege Escalation</span>
-              <span class="pill">Secrets Handling</span>
-              <span class="pill">Insufficient Logging</span>
-            </div>
-          </div>
-        </div>
+    <section class="section container" id="homelab" aria-labelledby="homelab-title">
+      <h2 id="homelab-title">Homelab</h2>
+      <p>My homelab is my core learning environment for networking, secure remote access, Docker services, log analysis, SIEM-style workflows and day-to-day troubleshooting. It helps me connect theory from university and training platforms to realistic technical scenarios.</p>
+      <div class="stack-grid" aria-label="Homelab stack list">
+        <span>Proxmox</span><span>Docker</span><span>Linux</span><span>MikroTik</span>
+        <span>Pi-hole</span><span>Splunk</span><span>Tailscale</span><span>Cloudflare Tunnel</span>
       </div>
     </section>
 
-    <section id="lab">
-      <div class="container">
-        <p class="section-kicker">Homelab</p>
-        <h2>A practical environment for learning, monitoring and troubleshooting</h2>
-
-        <div class="lab-panel">
-          <div>
-            <p>
-              My homelab is where I test deployments, practise networking, review logs and learn how services behave
-              outside a classroom environment. It helps me connect security theory with practical system behaviour.
-            </p>
-            <p>
-              I use it to explore Docker services, secure remote access, DNS filtering, monitoring and SIEM-style
-              workflows using real device and service logs.
-            </p>
-          </div>
-
-          <div class="stack-grid" aria-label="Homelab stack">
-            <span>Proxmox</span>
-            <span>Docker</span>
-            <span>Linux</span>
-            <span>MikroTik</span>
-            <span>Pi-hole</span>
-            <span>Splunk</span>
-            <span>Tailscale</span>
-            <span>Cloudflare Tunnel</span>
-          </div>
-        </div>
+    <section class="section container" id="approach" aria-labelledby="approach-title">
+      <h2 id="approach-title">Approach</h2>
+      <div class="grid cards-4">
+        <article class="card"><h3>Learn by building</h3><p>I retain technical knowledge best through implementation, labs and repeatable practice.</p></article>
+        <article class="card"><h3>Secure by design</h3><p>I focus on safer defaults, least privilege thinking and secure setup choices from the start.</p></article>
+        <article class="card"><h3>Document and improve</h3><p>I track what I build, what fails and what changes improved stability and security outcomes.</p></article>
+        <article class="card"><h3>Review logs and evidence</h3><p>I use logs and observable evidence to support troubleshooting and security decisions.</p></article>
       </div>
     </section>
 
-    <section id="approach">
-      <div class="container">
-        <p class="section-kicker">Approach</p>
-        <h2>How I work</h2>
-
-        <div class="approach-grid">
-          <article class="card compact">
-            <h3>Learn by building</h3>
-            <p>I build small systems, test them and learn from the problems that appear.</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Secure by design</h3>
-            <p>I try to think about least privilege, exposure, trust boundaries and safe defaults early.</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Document and improve</h3>
-            <p>I keep notes, screenshots and decisions so I can repeat work and explain what changed.</p>
-          </article>
-
-          <article class="card compact">
-            <h3>Review logs and evidence</h3>
-            <p>I use logs and observable behaviour to troubleshoot issues and understand security events.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container contact-card">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Open to junior security and technology opportunities</h2>
-          <p>
-            I am interested in cyber security internships, junior security engineer roles, SOC analyst experience,
-            application security and technology placements.
-          </p>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:danielsttoc@gmail.com">danielsttoc@gmail.com</a>
-          <a href="https://github.com/danielsttoc" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/danielsttoc/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>I am open to junior security engineer, SOC analyst intern, application security intern and technology internship opportunities.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:danielsttoc@gmail.com">danielsttoc@gmail.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/danielsttoc" target="_blank" rel="noopener noreferrer">github.com/danielsttoc</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danielsttoc/" target="_blank" rel="noopener noreferrer">linkedin.com/in/danielsttoc</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Daniel Scott. Built for GitHub Pages.</p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Daniel Scott</p>
   </footer>
 
   <script>
-    document.querySelectorAll('.nav-links a').forEach((link) => {
-      link.addEventListener('click', () => document.body.classList.remove('nav-open'));
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle?.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('open');
     });
+
+    navLinks?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navToggle?.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
