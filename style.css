@@ -657,3 +657,118 @@ footer {
     transition: none !important;
   }
 }
+
+/* ===== Final polish fixes ===== */
+
+/* Prevent the logo from showing as a default blue browser link */
+.logo,
+.logo:visited,
+.logo:active {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+.logo-mark {
+  text-decoration: none;
+}
+
+/* Tighter hero so the first screen does not feel too empty */
+.hero {
+  min-height: 88vh;
+  padding: 112px 0 72px;
+}
+
+.hero-copy {
+  max-width: 790px;
+}
+
+.focus-panel {
+  margin-top: 22px;
+}
+
+.focus-panel .pill-row {
+  justify-content: flex-start;
+}
+
+/* Make terminal card look like a real feature card */
+.hero-card {
+  align-self: center;
+  max-width: 430px;
+  justify-self: end;
+}
+
+.terminal-content p:nth-child(even) {
+  color: var(--text);
+}
+
+/* Stronger focus styling for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Make the nav logo spacing cleaner */
+.site-nav .logo {
+  line-height: 1;
+}
+
+@media (min-width: 921px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 72px;
+  }
+
+  .hero-copy {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .buttons,
+  .focus-panel .pill-row {
+    justify-content: center;
+  }
+
+  .focus-panel {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-card {
+    justify-self: center;
+    width: 100%;
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 21px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
+  .focus-panel {
+    padding: 14px;
+  }
+
+  .terminal-content {
+    font-size: 13px;
+  }
+}
