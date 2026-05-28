@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Nori Homelab Network Diagram</title>
+  <desc id="desc">Diagram showing external access, MikroTik routing, Pi-hole DNS, Proxmox services, Docker workloads and Splunk monitoring.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07100f"/>
+      <stop offset="100%" stop-color="#061b18"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title{font:700 30px Inter,Segoe UI,Arial,sans-serif;fill:#e7f7f2}
+      .subtitle{font:600 15px Inter,Segoe UI,Arial,sans-serif;fill:#2dd4bf}
+      .box{fill:#102320;stroke:#1e3f3a;stroke-width:2;rx:16;filter:url(#shadow)}
+      .box2{fill:#0b1715;stroke:#2dd4bf;stroke-width:2;rx:16;filter:url(#shadow)}
+      .label{font:700 16px Inter,Segoe UI,Arial,sans-serif;fill:#e7f7f2}
+      .small{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#9ec0b7}
+      .tiny{font:500 11px Inter,Segoe UI,Arial,sans-serif;fill:#9ec0b7}
+      .line{stroke:#2dd4bf;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .log{stroke:#f2c94c;stroke-width:3;fill:none;stroke-dasharray:8 6;marker-end:url(#arrow2)}
+      .vpn{stroke:#9b8cff;stroke-width:3;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow3)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2dd4bf"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f2c94c"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9b8cff"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="650" fill="url(#bg)"/>
+  <text x="600" y="42" text-anchor="middle" class="title">Nori Homelab Network Diagram</text>
+  <text x="600" y="68" text-anchor="middle" class="subtitle">Networking • SIEM • Docker • Secure Remote Access</text>
+
+  <rect x="35" y="105" width="250" height="400" class="box2"/>
+  <text x="160" y="135" text-anchor="middle" class="label">External Access</text>
+  <text x="160" y="180" text-anchor="middle" class="small">Internet</text>
+  <text x="160" y="230" text-anchor="middle" class="small">Cloudflare Tunnel</text>
+  <text x="160" y="280" text-anchor="middle" class="small">Tailscale VPN</text>
+  <text x="160" y="335" text-anchor="middle" class="small">Remote Admin</text>
+
+  <rect x="335" y="105" width="275" height="400" class="box"/>
+  <text x="472" y="135" text-anchor="middle" class="label">Edge / Network</text>
+  <text x="472" y="185" text-anchor="middle" class="small">MikroTik hEX S</text>
+  <text x="472" y="207" text-anchor="middle" class="tiny">Router • Firewall • NAT • DHCP</text>
+  <rect x="375" y="250" width="195" height="58" class="box2"/>
+  <text x="472" y="275" text-anchor="middle" class="small">Pi-hole</text>
+  <text x="472" y="294" text-anchor="middle" class="tiny">DNS filtering / local DNS</text>
+  <rect x="375" y="345" width="195" height="58" class="box2"/>
+  <text x="472" y="370" text-anchor="middle" class="small">Managed Switch</text>
+  <text x="472" y="389" text-anchor="middle" class="tiny">LAN distribution</text>
+
+  <rect x="660" y="105" width="500" height="400" class="box"/>
+  <text x="910" y="135" text-anchor="middle" class="label">Homelab / Proxmox</text>
+  <rect x="695" y="175" width="130" height="86" class="box2"/>
+  <text x="760" y="204" text-anchor="middle" class="small">Splunk</text>
+  <text x="760" y="226" text-anchor="middle" class="tiny">SIEM / Logs</text>
+  <rect x="850" y="175" width="130" height="86" class="box2"/>
+  <text x="915" y="204" text-anchor="middle" class="small">Docker Host</text>
+  <text x="915" y="226" text-anchor="middle" class="tiny">Services / Labs</text>
+  <rect x="1005" y="175" width="130" height="86" class="box2"/>
+  <text x="1070" y="204" text-anchor="middle" class="small">Linux VMs</text>
+  <text x="1070" y="226" text-anchor="middle" class="tiny">Testing / Tools</text>
+
+  <rect x="720" y="310" width="390" height="95" class="box2"/>
+  <text x="915" y="340" text-anchor="middle" class="small">Internal Virtual Network</text>
+  <text x="915" y="365" text-anchor="middle" class="tiny">Proxmox LXC / VM environment</text>
+
+  <path d="M285 225 C310 225, 315 185, 335 185" class="line"/>
+  <path d="M472 218 L472 250" class="line"/>
+  <path d="M570 374 C610 374, 625 218, 660 218" class="line"/>
+  <path d="M610 185 C640 185, 660 205, 695 205" class="log"/>
+  <path d="M285 280 C430 280, 550 345, 720 345" class="vpn"/>
+</svg>
