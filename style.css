@@ -77,6 +77,16 @@ h2 { margin-bottom: 1rem; font-size: clamp(1.6rem, 2vw, 2rem); }
 .btn-secondary { border-color: var(--accent); color: var(--accent); }
 .btn-secondary:hover, .btn-ghost:hover { background: rgba(45,212,191,.08); }
 .btn-ghost { border-color: var(--border); color: var(--text); }
+.btn-small {
+  padding: .45rem .8rem;
+  font-size: .88rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn-small:hover {
+  background: rgba(45,212,191,.08);
+  transform: translateY(-1px);
+}
 .focus-block p { margin: .2rem 0 .6rem; color: var(--muted); }
 .focus-block ul { display: flex; gap: .55rem; flex-wrap: wrap; padding: 0; margin: 0; list-style: none; }
 .focus-block li {
@@ -115,8 +125,35 @@ h2 { margin-bottom: 1rem; font-size: clamp(1.6rem, 2vw, 2rem); }
   box-shadow: var(--shadow);
 }
 .card h3 { margin-bottom: .5rem; }
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
 .project-card .tags { color: var(--accent); font-size: .92rem; margin: .55rem 0 0; }
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
 .bullet-list { margin: .35rem 0 0 1.2rem; padding: 0; }
+
+.homelab-diagram {
+  margin: 1.2rem 0;
+}
+.homelab-diagram p {
+  color: var(--muted);
+}
+.homelab-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #06100f;
+}
 
 .stack-grid {
   display: grid; gap: .7rem;
