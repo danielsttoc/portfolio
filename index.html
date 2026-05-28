@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Daniel Scott - Cyber Security portfolio focused on homelab projects, application security training, SIEM workflows and hands-on infrastructure learning." />
   <title>Daniel Scott | Cyber Security Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -20,6 +20,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#writeups">Writeups</a></li>
         <li><a href="#training">Training</a></li>
         <li><a href="#homelab">Homelab</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -90,24 +91,39 @@
           <p>Built a Proxmox-based home environment running Linux services, Docker workloads and segmented networking to practice secure infrastructure operations.</p>
           <p><strong>What I learned / achieved:</strong> Improved practical troubleshooting, secure configuration habits, service hardening and operational reliability.</p>
           <p class="tags">Proxmox · Linux · Docker · Networking</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/homelab-siem-splunk" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <a class="btn btn-small btn-secondary" href="https://github.com/danielsttoc/security-writeups" target="_blank" rel="noopener noreferrer">View Writeups</a>
+          </div>
         </article>
         <article class="card project-card">
           <h3>Splunk SIEM Dashboard with MikroTik Logs</h3>
           <p>Created Splunk dashboards ingesting MikroTik syslog data to explore visibility, filtering and security-relevant event review.</p>
           <p><strong>What I learned / achieved:</strong> Built confidence with log pipelines, search queries and basic SIEM-style monitoring workflows.</p>
           <p class="tags">Splunk · MikroTik · Syslog · SIEM</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/homelab-siem-splunk" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <a class="btn btn-small btn-secondary" href="https://github.com/danielsttoc/security-writeups/blob/main/splunk/mikrotik-log-monitoring.md" target="_blank" rel="noopener noreferrer">View Writeup</a>
+          </div>
         </article>
         <article class="card project-card">
           <h3>SecureFlag Application Security Labs</h3>
           <p>Completed guided AppSec labs across OWASP-related weaknesses and secure development topics.</p>
           <p><strong>What I learned / achieved:</strong> Practiced identifying and explaining vulnerabilities such as SQLi, XSS and broken access control patterns.</p>
           <p class="tags">SecureFlag · OWASP Top 10 · AppSec</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/owasp-appsec-notes" target="_blank" rel="noopener noreferrer">OWASP Notes</a>
+          </div>
         </article>
         <article class="card project-card">
           <h3>Secure DevOps with Docker Labs</h3>
           <p>Worked through container security labs covering insecure daemon exposure, privilege escalation and risky container settings.</p>
           <p><strong>What I learned / achieved:</strong> Strengthened Docker security awareness and safer configuration practices for development environments.</p>
           <p class="tags">Docker · Secure DevOps · Linux</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/docker-security-labs" target="_blank" rel="noopener noreferrer">View Repo</a>
+            <a class="btn btn-small btn-secondary" href="https://github.com/danielsttoc/security-writeups/blob/main/docker/docker-hardening-notes.md" target="_blank" rel="noopener noreferrer">View Writeup</a>
+          </div>
         </article>
         <article class="card project-card">
           <h3>Raspberry Pi Facial Recognition Project</h3>
@@ -124,9 +140,41 @@
       </div>
     </section>
 
+    <section class="section container" id="writeups" aria-labelledby="writeups-title">
+      <h2 id="writeups-title">Technical Writeups</h2>
+      <p>Short technical writeups documenting security investigations, Linux troubleshooting, networking, SIEM monitoring and application security learning.</p>
+      <div class="grid cards-2">
+        <article class="card project-card">
+          <h3>Security Writeups Repository</h3>
+          <p>Collection of Linux troubleshooting, Splunk monitoring, Docker hardening, MikroTik firewall learning, Pi-hole DNS filtering and incident investigation notes.</p>
+          <p class="tags">Linux · Splunk · Docker · Networking · Incident Response</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/security-writeups" target="_blank" rel="noopener noreferrer">View Repo</a>
+          </div>
+        </article>
+        <article class="card project-card">
+          <h3>OWASP AppSec Notes</h3>
+          <p>Application security notes covering common OWASP-style weaknesses, including SQL injection, broken authentication, access control issues and insecure deserialization.</p>
+          <p class="tags">OWASP Top 10 · AppSec · Secure Coding</p>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/danielsttoc/owasp-appsec-notes" target="_blank" rel="noopener noreferrer">View Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section container" id="training" aria-labelledby="training-title">
       <h2 id="training-title">Certifications &amp; Practical Training</h2>
       <p>This section represents practical training and hands-on learning paths completed through SecureFlag, rather than formal professional certifications.</p>
+      <div class="card">
+        <h3>Currently Pursuing</h3>
+        <ul class="bullet-list">
+          <li>ISC2 Certified in Cybersecurity (CC)</li>
+          <li>CompTIA Network+</li>
+          <li>CompTIA Security+</li>
+          <li>Cyber Security Work Experience Program – London Success Academy</li>
+        </ul>
+      </div>
       <div class="card">
         <h3>SecureFlag learning paths</h3>
         <ul class="bullet-list">
@@ -147,6 +195,11 @@
     <section class="section container" id="homelab" aria-labelledby="homelab-title">
       <h2 id="homelab-title">Homelab</h2>
       <p>My homelab is my core learning environment for networking, secure remote access, Docker services, log analysis, SIEM-style workflows and day-to-day troubleshooting. It helps me connect theory from university and training platforms to realistic technical scenarios.</p>
+      <div class="homelab-diagram card">
+        <h3>Network Architecture</h3>
+        <p>This diagram summarises my homelab architecture, including MikroTik routing, Pi-hole DNS filtering, Proxmox services, Docker workloads, Splunk monitoring, Tailscale and Cloudflare Tunnel access.</p>
+        <img src="assets/network-diagram.svg" alt="Diagram showing Daniel Scott's homelab network architecture with MikroTik, Pi-hole, Proxmox, Docker, Splunk, Tailscale and Cloudflare Tunnel">
+      </div>
       <div class="stack-grid" aria-label="Homelab stack list">
         <span>Proxmox</span><span>Docker</span><span>Linux</span><span>MikroTik</span>
         <span>Pi-hole</span><span>Splunk</span><span>Tailscale</span><span>Cloudflare Tunnel</span>
